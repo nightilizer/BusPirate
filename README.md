@@ -131,3 +131,19 @@ w                              <<< stop power supplies
 m1                             <<< set HiZ mode
 ```
 
+
+# 93c56 Branch
+This chip in my toyota ecu needed to be written to in order to reset the imobilizer after losing all the keys.
+I could poke at the chip from the cli, but the bus pirate binary mode does not work with this particular 3wire microwire chip.
+This cli scripting library saved the day.
+
+Reading
+```
+./buspirate.py -r -s56 -f scripts/93c56_toyota_dump
+```
+
+Writing
+```
+./buspirate.py -w -s 56 -f scripts/93c56_toyota_zeroed
+```
+
