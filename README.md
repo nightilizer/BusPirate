@@ -139,11 +139,15 @@ This cli scripting library saved the day.
 
 Reading
 ```
-./buspirate.py -r -s56 -f scripts/93c56_toyota_dump
+./buspirate.py -r -s56 -f scripts/93c56_toyota_lc100_dump
 ```
 
 Writing
 ```
-./buspirate.py -w -s 56 -f scripts/93c56_toyota_zeroed
-```
+./buspirate.py -w -s 56 -f scripts/93c56_toyota_lc100_zeroed
 
+```
+93c56_toyota_lc100_dump - from an ebay lx470/lc100 89666-60710
+93c56_toyota_lc100_zeroed - PM'ed from a member on ih8mud
+93c56_toyota_sequoia_dump - from a junkyard gen1 sequoia ecu
+93c56_toyota_mr2_zeroed - posted on https://www.spyderchat.com/threads/lost-keys-immobilizer-fix.44760/page-2
